@@ -82,8 +82,8 @@ class MediaPlayerQueue(Queue):
     def play(self):
         while self.count > 0:
             current_track_node = self.dequeue()
-            print("Now playing {}".format(current_track_node.data.title))
-            time.sleep(current_track_node.data.length)
+            print("Now playing {}".format(current_track_node.title))
+            time.sleep(current_track_node.length)
 
 track1 = Track("white whistle")
 track2 = Track("butter butter")
